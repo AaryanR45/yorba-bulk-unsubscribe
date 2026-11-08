@@ -44,23 +44,4 @@ export class MailingListsPage {
     await expect(bulkUnsubscribeButton).toBeVisible();
     await bulkUnsubscribeButton.click();
   }
-
-  // for manual action
-  // async openUnsubscribeConfirmationManual(): Promise<void> {
-  //   const manualCheckbox = this.page.getByRole('checkbox').nth(14)
-  //   await manualCheckbox.scrollIntoViewIfNeeded();
-  //   await manualCheckbox.waitFor({ state: "visible" });
-  //   await manualCheckbox.check();
-  //   await expect(manualCheckbox).toBeChecked();
-  //   await this.startUnsubscribe();
-  //   await this.page.getByRole("button", { name: "Take action" }).click();
-  //   await expect(
-  //     this.page.getByRole("heading", { name: "We need your help to" }),
-  //   ).toBeVisible(); //assert manual action prompt is open
-  // }
-
-  // async expectconfirmUnsubscribeManual(): Promise<void> {
-  //   await this.page.getByRole("button", { name: "Close", exact: true }).click();
-  //   await this.page.getByRole("button", { name: "Confirm" }).click();
-  // }
 }

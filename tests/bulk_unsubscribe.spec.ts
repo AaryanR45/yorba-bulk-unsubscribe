@@ -14,6 +14,4 @@ test('test', async ({ page }) => {
   await mailingLists.openMailingLists();
   await mailingLists.selectMailingListCheckboxes();
   await mailingLists.startUnsubscribe();
-//   await mailingLists.openUnsubscribeConfirmationManual();
-//   await mailingLists.expectconfirmUnsubscribeManual();
 });
